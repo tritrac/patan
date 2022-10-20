@@ -1,0 +1,42 @@
+<ion-content>
+  <div class="main_content_div">
+
+
+     <div class="content_div">
+     
+
+       <div class="round_div">
+        <div class="user_div" [style.backgroundImage]="'url(assets/imgs/logo.png)'"></div>
+      </div>
+
+    </div>
+       
+    <div class="content_div">
+     
+
+       <div class="round_div">
+        <div class="user_div" [style.backgroundImage]="'url(assets/imgs/logo.png)'"></div>
+      </div>
+      <ion-label class="head_lbl">Welcome To</ion-label>
+      <ion-label class="head_lbl">Patan Mandal</ion-label>
+      <ion-label class="small_lbl">Login with your account</ion-label>
+      <form  [formGroup]="login" (ngSubmit)="onFormSubmit(login.value)">
+      <ion-input type="text"  name="mem_mobile" formControlName="mem_mobile" required="true" placeholder="Mobile No"></ion-input>
+      <!-- <ion-input [type]="passwordType" placeholder="Password">
+        <ion-button (click)='hideShowPassword()' class="toggele" fill="clear">
+          <ion-icon [name]="passwordIcon" slot="icon-only"></ion-icon>
+        </ion-button>
+      </ion-input>
+
+      <ion-label class="forgot_lbl" (click)="goToForgot()">Forgot Password ?</ion-label> -->
+
+      <ion-button type="submit" [disabled]="!login.valid" expand="block" shape="round">
+        Send OTP
+      </ion-button>
+
+        </form>
+     <!--  <ion-label (click)="goToRegister()" class="bottom_lbl">Don't have an Account? Sign Up</ion-label> -->
+    </div>
+
+  </div>
+</ion-content>

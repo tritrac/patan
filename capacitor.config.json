@@ -1,0 +1,9 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "ionic-rest-api-2",
+	"webDir": "www",
+	"bundledWebRuntime": false,
+	 "android": {
+        "allowMixedContent": true
+    }
+}
